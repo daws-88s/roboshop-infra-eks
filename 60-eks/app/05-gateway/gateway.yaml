@@ -3,6 +3,8 @@ kind: Gateway
 metadata:
   name: roboshop-gateway
   namespace: default
+  annotations:
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:160885265516:certificate/b6983d9a-848d-4898-8335-81c74db10bc3
 spec:
   gatewayClassName: roboshop-aws-alb
   infrastructure:
