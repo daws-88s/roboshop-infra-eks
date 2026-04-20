@@ -25,8 +25,8 @@ spec:
     component: rabbitmq
   ports:
   - protocol: TCP
-    port: 6379 # servie port
-    targetPort: 6379 # container port
+    port: 5672 # servie port
+    targetPort: 5672 # container port
 ---
 apiVersion: apps/v1
 kind: StatefulSet
@@ -91,5 +91,5 @@ spec:
     component: rabbitmq
   ports:
   - protocol: TCP
-    port: 6379 # servie port
-    targetPort: 6379 # container port
+    port: 5672 # servie port
+    targetPort: 5672 # container port
