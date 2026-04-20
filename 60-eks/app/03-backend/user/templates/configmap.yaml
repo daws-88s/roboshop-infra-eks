@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: catalogue
+  name: user
   namespace: roboshop
   labels:
     project: roboshop
     tier: backend
-    component: catalogue
+    component: user
 data:
   MONGO: "true"
   REDIS_URL: {{ .Values.configMap.REDIS_URL }}
