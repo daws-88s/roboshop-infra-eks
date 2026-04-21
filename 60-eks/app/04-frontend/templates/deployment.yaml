@@ -73,7 +73,7 @@ metadata:
 spec:
   ingressClassName: alb
   rules:
-  - host: "roboshop-dev.daws88s.online"
+  - host: {{ .Values.ingress.host }}
     http:
       paths:
       - pathType: Prefix
