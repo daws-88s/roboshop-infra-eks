@@ -38,6 +38,7 @@ resource "aws_lb_target_group" "frontend" {
   name     = "${var.project}-${var.environment}-frontend"
   port     = 80
   protocol = "HTTP"
+  # if this is VM target group, then target_type should be instance. if target_type is IP pods will come and register here
   target_type = "ip"
   vpc_id   = local.vpc_id
   deregistration_delay = 60
