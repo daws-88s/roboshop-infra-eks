@@ -66,6 +66,13 @@ Once you setup and login to jenkins.
 
 # Sonar
 
+* Scanner Tool configuration
+* Server configuration in system
+* Authentication token
+* Webhook
+* Standard mode
+* Quality gate creation
+
 ### 🐞 Bugs
 
 An issue representing a coding error that will likely cause unexpected behavior or application failure. This seems fine but sometimes it may break in production.
