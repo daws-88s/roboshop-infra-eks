@@ -50,6 +50,7 @@ terraform apply -var="sonar=false"
 Once you setup and login to jenkins.
 
 ### Plugins
+* Pipeline stage view
 * Pipeline utility steps
 * AWS creds
 * AWS Steps
